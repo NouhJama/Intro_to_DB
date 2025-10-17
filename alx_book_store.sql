@@ -6,13 +6,13 @@ USE alx_book_store;
 -- Table to store authors information
 CREATE TABLE Authors (
     author_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(215) NOT NULL
+    author_name VARCHAR(215) NOT NULL
 );
 
 -- Table to store customers information
 CREATE TABLE Customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(215) NOT NULL,
+    customer_name VARCHAR(215) NOT NULL,
     email VARCHAR(215) UNIQUE NOT NULL,
     address TEXT NOT NULL
 );
