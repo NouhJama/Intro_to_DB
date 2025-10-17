@@ -1,6 +1,11 @@
--- scrip for books full description
+-- Script for books full description
 USE alx_book_store;
 
-SELECT Books.title, Books.published_date, Books.price
-FROM Books
-JOIN Authors ON Books.author_id = Authors.author_id;
+-- Show the complete CREATE statement for the books table
+SHOW CREATE TABLE books;
+
+
+SHOW COLUMNS FROM books;
+SELECT COLUMN_NAME, DATA_TYPE, IS_NULLABLE, COLUMN_KEY 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'books' AND TABLE_SCHEMA = 'alx_book_store';
